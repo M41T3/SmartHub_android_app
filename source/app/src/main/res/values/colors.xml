@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#fafafa</color>
+    <color name="colorPrimaryDark">#dcdcdc</color>
+    <color name="colorPrimaryDarker">#6e6e6e</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="smartHubRed">#ea5351</color>
+    <color name="smartHubRedStatus">#ffaead</color>
+    <color name="smartHubGreenStatus">#8aff90</color>
+    <color name="smartHubRedLight">#64ea5351</color>
+    <color name="smartHubYellow">#efa450</color>
+</resources>

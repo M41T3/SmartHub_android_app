@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+    <Button
+        android:text="+"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPlus"
+        android:background="@color/smartHubRed"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="100dp"
+        android:elevation="3dp" />
+
+    <TextView
+        style="@style/textView_style"
+        android:text="LED-Streifen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        style="@style/editText_style"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editTextRed"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_height="42dp"
+        android:autoText="false"
+        android:text="0"
+        android:layout_width="110dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        style="@style/editText_style"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:id="@+id/editTextGreen"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintLeft_toRightOf="@+id/editTextRed"
+        android:layout_width="110dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintRight_toLeftOf="@+id/editTextBlue"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        style="@style/editText_style"
+        android:layout_height="42dp"
+        android:ems="10"
+        android:id="@+id/editTextBlue"
+        android:inputType="number"
+        android:text="0"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:layout_width="110dp" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:ems="10"
+        android:id="@+id/editTextColor"
+        android:inputType="none"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:layout_height="14dp"
+        android:cursorVisible="false"
+        android:clickable="false"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGreen"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <Button
+        android:text="Senden"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonSend"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="0dp"
+        android:background="@color/smartHubRed"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/editTextColor"
+        android:layout_marginTop="4dp"
+        android:elevation="3dp" />
+
+    <Button
+        android:text="Modus 1"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPre1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonPre2"
+        android:background="@color/smartHubYellow"
+        android:elevation="3dp" />
+
+    <Button
+        android:text="Modus 2"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPre2"
+        app:layout_constraintRight_toLeftOf="@+id/buttonPre3"
+        android:layout_marginEnd="4dp"
+        android:layout_marginStart="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/buttonPre1"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSend"
+        android:background="@color/smartHubYellow"
+        android:layout_marginTop="4dp"
+        android:elevation="3dp" />
+
+    <Button
+        android:text="Modus 3"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonPre3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonPre2"
+        android:background="@color/smartHubYellow"
+        android:elevation="3dp" />
+
+    <TextView
+        style="@style/textView_style"
+        android:text="Deckenlampe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPre1"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:text="-"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonMinus"
+        android:background="@color/smartHubRed"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonPlus"
+        app:layout_constraintLeft_toRightOf="@+id/buttonPlus"
+        android:layout_marginStart="4dp"
+        android:layout_width="100dp"
+        android:elevation="3dp" />
+
+    <Button
+
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="W"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonWarm"
+        android:background="@color/smartHubYellow"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonMinus"
+        android:layout_marginStart="4dp"
+        app:layout_constraintLeft_toRightOf="@+id/buttonMinus"
+        app:layout_constraintRight_toLeftOf="@+id/buttonCold"
+        android:layout_marginEnd="4dp"
+        android:layout_width="100dp"
+        android:elevation="3dp" />
+
+    <Button
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:text="K"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonCold"
+        android:background="@color/smartHubYellow"
+        app:layout_constraintBaseline_toBaselineOf="@+id/buttonWarm"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="100dp"
+        android:elevation="3dp" />
+
+    <TextView
+        android:text="Rot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:text="Grün"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@+id/textView3"
+        app:layout_constraintRight_toLeftOf="@+id/textView7"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:text="Blau"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switch1"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColorLink="@color/smartHubGreenStatus" />
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/switchLamp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPre3"
+        android:textColorLink="@color/smartHubGreenStatus" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuItemOne"
+        android:icon="@drawable/ic_sensor"
+        android:title="Raumdaten"
+
+        />
+
+    <item
+        android:id="@+id/menuItemTwo"
+        android:icon="@drawable/ic_remote"
+        android:title="Fernsteuerung"
+
+        />
+
+    <item
+        android:id="@+id/menuItemThree"
+        android:icon="@drawable/ic_lightbulb"
+        android:title="Licht"
+
+        />
+
+    <item
+        android:id="@+id/menuItemFour"
+        android:icon="@drawable/ic_settings"
+        android:title="Optionen"
+
+        />
+
+</menu>
